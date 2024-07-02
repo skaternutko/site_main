@@ -20,19 +20,15 @@ var cols = 11;
 var rows = 10;
 var leftFlipper;
 
-var plink;
-function preload(){
-    plink = loadSound('billiard ball hit.mp3');
-}
-
 
 function setup () {
     createCanvas(600, 700);
     colorMode(HSB);
     engine = Engine.create();
     world = engine.world;
-    engine.gravity.scale = 0.0004;
+    //engine.gravity.scale = 0.0004;
 
+    /* Pinball code
     function collision(event){
         var pairs = event.pairs;
         for (var i = 0; i < pairs.length; i++){
@@ -48,12 +44,16 @@ function setup () {
             }
         }
     }
+    
     Events.on(engine, 'collisionStart', collision);
 
-    var spacing = width / cols;
-    //pegs from plinko, will prob repurpose into bumpers
+    
+    */
+    //pegs from plinko, repurposed into background dots
 
-    /*for (var j = 0; j < rows; j ++){
+    var spacing = width / cols;
+
+    for (var j = 0; j < rows; j ++){
         for (var i = 0; i < cols + 1; i ++){
             var x = i * spacing;
             if (j % 2 == 1){
@@ -64,8 +64,8 @@ function setup () {
             var p = new Peg(x, y, 10)
             pegs.push(p);
         }
-    }*/
-
+    }
+/*
     //flippers
     leftFlipper = new Flipper(width/2, height/2, 200, 35);
     flippers.push(leftFlipper);
@@ -83,25 +83,28 @@ function setup () {
             var b = new Boundary(x, y, w, h);
             bounds.push(b);
         }
+    */
     var runner = Runner.create();
     //run the engine
     Runner.run(runner, engine);
 }
 
-function updateRotation(){
-}
 
 function mousePressed(){
-    balls.push(new Ball(mouseX, 30, 15));
+    //balls.push(new Ball(mouseX, 30, 15));
 }
 
 
 function mouseMoved(){  
-   // reticle.push(new Reticle(mouseX, 15, 15));
+   
 }
 
 function draw(){
     background(51);
+    for (var i = 0; i < pegs.length; i++){
+        pegs[i].show();
+    }  
+    /* Pinball code
     if (mouseIsPressed == true)
         {
             //Body.setAngle(leftFlipper.body, leftFlipper.body.angle + leftFlipper.body.rotationSpeed);
@@ -117,9 +120,7 @@ function draw(){
                 i--;
             }
         }
-    for (var i = 0; i < pegs.length; i++){
-        pegs[i].show();
-    }  
+
 
     for (var i = 0; i < bounds.length; i++){
         bounds[i].show();
@@ -136,6 +137,6 @@ function draw(){
                 reticle.splice(1, 1);
             }
 
-    }
+    }*/
 }
 
