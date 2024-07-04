@@ -1,10 +1,9 @@
-  html, body {
+  @font-face { font-family: Monofett; src: url('fonts/Monofett-Regular.TTF'); } 
+
+  html{
     font-family:"Verdana",sans-serif;
   }
-  h1{
-    font-family:"Viafont";
-    font-size: 50px;
-  }
+
   h2{
     font-family:"Viafont";
     font-size: 30px;
@@ -12,9 +11,13 @@
     padding-right: 112px;
 
   }
-  h3,h4,h5,h6 {
+  h3{
+    font-size: 50px;
+  }
+  h4,h5,h6 {
     font-family:"Segoe UI",sans-serif
   }
+
   body {
     padding: 0;
     margin: 0;
@@ -22,9 +25,18 @@
     font-family: Arial, Helvetica, sans-serif;
 
     /* This centers our sketch horizontally. */
-    //justify-content: center;
+    justify-content: center;
   }
 
+  .dots{
+    background-image: radial-gradient(#6e26e2 3px, transparent 0), radial-gradient(#6e26e2 3px, transparent 0);
+    background-size: 20px 20px;
+    background-position: 0 0, 30px 30px;
+  }
+
+  .erase_effect{
+    background-image: linear-gradient(#dc40bfe0, transparent);
+  }
   .container {
     text-align: center;
     padding-top: 15px;
@@ -33,9 +45,50 @@
   .banner {
     border-radius: 25px;
     position:relative;
+    width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .logo_outline {
+    background: black;
+    border-radius: 25px;
+    padding: 10px;
+    position:relative;
+  }
+
+  #logo {
+    background: #2d0967;
+    border-radius: 25px;
+    position:relative;
+    padding: 10px;
+  }
+  .nav {
     width: 800px;
     margin: auto;
-    background-color: #2d0967;
+    overflow: hidden;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Monofett";
+    background: white;
+    border-radius: 25px;
+  }
+
+  .nav a {
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 50px; 
+  }
+
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .nav a.active {
+    background-color: #04AA6D;
     color: white;
   }
 
@@ -49,45 +102,26 @@
     color: white;
   }
 
-  .nav {
-    background-color: black;
-    overflow: hidden;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  .nav a {
-    color: #f2f2f2;
-    padding: 16px;
-    text-decoration: none;
-    font-size: 30px;
-  }
-
-  .nav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-
-  .test2{
-    background-color: #2d0967;
-  }
-
   img {
+    border-radius: 25px;
     max-width: 100%;
     display: block;
   }
   
   figure {
+    transition: transform .2s;
+    padding: 7px;
     margin: 0;
     display: grid;
     grid-template-rows: 1fr auto;
     margin-bottom: 10px;
     break-inside: avoid;
+    background-color: white;
+    border-radius: 25px;
+  }
+
+  figure:hover{
+    transform: scale(1.1);
   }
   
   figure > img {
@@ -108,7 +142,19 @@
     justify-self: start;
   }
 
-  .gallery{
-    column-count: 3;
+  .canvas{
+    border-radius: 25px;
+  }
+
+  .double_gallery{
+    padding: 25px;
+    column-count: 2;
     column-gap: 10px;
+  }
+
+  .single_gallery{
+    padding: 25px;
+    column-count: 1;
+    column-gap: 10px;
+    border-radius: 25px;
   }
