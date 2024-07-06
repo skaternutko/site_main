@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio v1</title>
+  <title>artwork</title>
   <link rel="stylesheet" href="../style.css">
   <script src="common_scripts.js"></script>
   <!--
@@ -26,27 +26,28 @@
     <div class="erase_effect">
       <div class="container">
         <div class="banner">
-          <div class = "logo_outline">
             <div id = "logo">
               <img onclick = "changeLogo()" src="../LOGOS/cannons_logo_creative.png"/>
-            </div>
           </div>
         </div>
         <div class="nav">
-          <a class="active" href="../home.html">HOME</a>
-          <a href="#news">PLAY!</a>
-          <a href="portfolio/artwork.html">PORTFOLIO</a>
-          <a href="#about">BLOG</a>
+          <a class="active" href="../home.html">
+            <img src="../assets/home.png"/></a>
+          <a href="../portfolio/projects.html">
+            <img src="../assets/portfolio.png"/></a>
+          <a href="#news">
+            <img src="../assets/play.png"/></a>
         </div>
-        <div class="main">
-          <div class="nav">
-            <a class="active" href="home.html">GAMES</a>
-            <a href="#news">ART</a>
-            <a href="portfolio.html">WRITING</a>
-            <a href="#about">VIDEOS</a>
-          </div>
-          <div class = "canvas">
-            <h3>ILLUSTRATIONS</h3>
+        <div class="nav">
+          <a class="active" href="projects.html">
+            <img src="../assets/projects.png"/></a>
+          <a href="artwork.html">
+            <img src="../assets/art.png"/></a>
+          <a href="credits.html">
+            <img src="../assets/credits.png"/></a>
+        </div>
+        <div class="main"> 
+          <h3>ILLUSTRATIONS</h3>
             <div class="single_gallery">
               <figure>
                 <div class = "logo_outline">
@@ -97,9 +98,7 @@
               </figure>
               --> 
             </div>
-          </div>
-
-          <div class="double_gallery">
+          <div id="block" class="double_gallery">
             <h3>CHARACTER ART</h3>
             <figure>
               <img src="art/CHARACTER/blaze.png" alt="A windmill" />
@@ -150,7 +149,7 @@
               <figcaption><a href="#">5</a></figcaption>
             </figure>
           </div>
-          <div class="double_gallery">
+          <div id="block" class="double_gallery">
             <h3>CONCEPT ART</h3>
             <figure>
               <img src="art/CONCEPT/steelheart_logos.png" alt="A windmill" />
@@ -261,8 +260,6 @@
       </div>
     </div>
   </div>
-  <main>
-  </main>
 </body>
 
 </html>

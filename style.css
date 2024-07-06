@@ -13,11 +13,16 @@
   }
   h3{
     font-size: 50px;
+    text-align: center;
   }
   h4,h5,h6 {
-    font-family:"Segoe UI",sans-serif
+    font-family:"Segoe UI",sans-serif;
   }
 
+  p{
+    font-family:"Segoe UI",sans-serif;
+    font-size: large;
+  }
   body {
     padding: 0;
     margin: 0;
@@ -26,6 +31,12 @@
 
     /* This centers our sketch horizontally. */
     justify-content: center;
+  }
+
+  .white_background{
+    border-radius: 25px;
+    background-color: white;
+    padding: 10px;
   }
 
   .dots{
@@ -38,7 +49,6 @@
     background-image: linear-gradient(#dc40bfe0, transparent);
   }
   .container {
-    text-align: center;
     padding-top: 15px;
    }
 
@@ -47,49 +57,72 @@
     position:relative;
     width: 900px;
     margin: auto;
-    background-color: white;
+    /*background-color: white;*/
     padding: 10px;
+    margin-bottom: 15px;
   }
 
-  .logo_outline {
+  .black_outline {
     background: black;
     border-radius: 25px;
     padding: 10px;
     position:relative;
   }
 
-  #logo {
+  .purple_body {
     background: #2d0967;
+    border-radius: 25px;
+    padding: 10px;
+    position:relative;
+  }
+
+  #about_me{
+    text-align: center;
+    
+  }
+
+  #about_me > img{
+    position:absolute;
+    bottom: 50px;
+    left: 250px;
+    opacity: 0%;
+    scale: 200%;
+  }
+
+  #about_me >img:hover{
+    transition: opacity 10s;
+    opacity: 100%;
+  }
+
+  #about_me >img:  {
+    opacity: 100%;
+  }
+
+  #logo {
+    /*background: #2d0967;*/
     border-radius: 25px;
     position:relative;
     padding: 10px;
   }
+
   .nav {
+    column-count: 3;
     width: 800px;
     margin: auto;
-    overflow: hidden;
     padding-top: 15px;
     padding-bottom: 15px;
-    font-family: "Monofett";
-    background: white;
-    border-radius: 25px;
+    
   }
 
-  .nav a {
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    font-size: 50px; 
+  .nav a > img {
+    transition: transform .1s;
   }
 
-  .nav a:hover {
-    background-color: #ddd;
-    color: black;
+  .nav a > img:hover {
+    transform: scale(1.2);
   }
 
   .nav a.active {
-    background-color: #04AA6D;
-    color: white;
   }
 
   .main {
@@ -100,6 +133,7 @@
     margin: auto;
     padding-top:15px;
     color: white;
+    
   }
 
   img {
@@ -111,10 +145,9 @@
   figure {
     transition: transform .2s;
     padding: 7px;
-    margin: 0;
     display: grid;
     grid-template-rows: 1fr auto;
-    margin-bottom: 10px;
+    margin: 10px;
     break-inside: avoid;
     background-color: white;
     border-radius: 25px;
@@ -146,15 +179,28 @@
     border-radius: 25px;
   }
 
+  #block{
+    margin: 25px;
+  }
   .double_gallery{
-    padding: 25px;
     column-count: 2;
     column-gap: 10px;
   }
 
   .single_gallery{
-    padding: 25px;
     column-count: 1;
     column-gap: 10px;
     border-radius: 25px;
+  }
+
+  .footer{
+    text-align: center;
+    background-color: #602db3;
+    color: white;
+  }
+
+  .socials_gallery{
+    width: 500px;
+    column-count: 5;
+    margin: auto;
   }
