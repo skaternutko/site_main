@@ -7,21 +7,26 @@
   h2{
     font-family:"Viafont";
     font-size: 30px;
-    text-align: end;
-    padding-right: 112px;
-
+    text-align: center;
   }
   h3{
     font-size: 50px;
-    text-align: center;
   }
-  h4,h5,h6 {
-    font-family:"Segoe UI",sans-serif;
+
+  h4{
+    line-height: .3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    font-size: 30px;
+  }
+  
+  h5,h6 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
   }
 
   p{
-    font-family:"Segoe UI",sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
+    line-height: 1.6;
   }
   body {
     padding: 0;
@@ -49,7 +54,7 @@
     background-image: linear-gradient(#dc40bfe0, transparent);
   }
   .container {
-    padding-top: 15px;
+    padding: 15px;
    }
 
   .banner {
@@ -109,9 +114,10 @@
     column-count: 3;
     width: 800px;
     margin: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    
+  }
+
+  #portfolio{
+    padding-bottom: 20px;   
   }
 
   .nav a > img {
@@ -187,6 +193,7 @@
     column-gap: 10px;
   }
 
+
   .single_gallery{
     column-count: 1;
     column-gap: 10px;
@@ -194,6 +201,7 @@
   }
 
   .footer{
+    padding-bottom: 20px;
     text-align: center;
     background-color: #602db3;
     color: white;
@@ -203,4 +211,44 @@
     width: 500px;
     column-count: 5;
     margin: auto;
+  }
+
+  .image_container{
+    width:auto;
+    object-fit: contain;
+  }
+
+  .text_container{
+    padding: 10px;
+  }
+
+  a{
+    color: #7891e4;
+    font-style: italic;
+  }
+
+  #project{
+    padding-top: 25px;
+  }
+
+  button {
+    background: #0e0b22;
+    color: #fff;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 4px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background: #000000c4;
+  }
+
+  #more_text{
+    min-height: 270px;
+  }
+
+  address{
+    padding: 10px;
+    font-size: 20px;
   }
