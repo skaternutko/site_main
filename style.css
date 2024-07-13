@@ -31,7 +31,6 @@
   p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
-    line-height: 1.6;
   }
   body {
     padding: 0;
@@ -188,11 +187,21 @@
   #block{
     margin: 25px;
   }
+  
   .double_gallery{
     column-count: 2;
     column-gap: 10px;
   }
 
+  .double_gallery > p{
+    margin: auto;
+    text-align: left;
+  }
+
+  .double_gallery > img{
+    margin: auto;
+    text-align: left;
+  }
 
   .single_gallery{
     column-count: 1;
