@@ -17,6 +17,11 @@
     line-height: .3;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
     font-size: 30px;
+    color:black;
+  }
+
+  h4 > u{
+    color: white;
   }
   
   h5,h6 {
@@ -39,13 +44,14 @@
   }
 
   .white_background{
-    border-radius: 25px;
-    background-color: white;
-    padding: 10px;
+    border-radius: 35px;
+    border-color: white;
+    border-style: solid;
+    border-width: 10px;
   }
 
   .dots{
-    background-image: radial-gradient(#6e26e2 3px, transparent 0), radial-gradient(#6e26e2 3px, transparent 0);
+    background-image: radial-gradient(#6e26e2 4px, transparent 0), radial-gradient(#6e26e2 4px, transparent 0);
     background-size: 20px 20px;
     background-position: 0 0, 30px 30px;
   }
@@ -67,18 +73,15 @@
     margin-bottom: 15px;
   }
 
-  .black_outline {
-    background: black;
-    border-radius: 25px;
-    padding: 10px;
-    position:relative;
-  }
-
   .purple_body {
-    background: #2d0967;
+    background: #3b1081a1;
     border-radius: 25px;
     padding: 10px;
     position:relative;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 25px;
   }
 
   #about_me{
@@ -132,14 +135,12 @@
   }
 
   .main {
-    border-radius: 25px;
     position:relative;
     width: 1000px;
     min-height: 60px;
     margin: auto;
     padding-top:15px;
     color: white;
-    
   }
 
   img {
@@ -149,36 +150,35 @@
   }
   
   figure {
-    transition: transform .2s;
-    padding: 7px;
+    transition: transform .1s;
+    padding: 10px;
     display: grid;
     grid-template-rows: 1fr auto;
-    margin: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     break-inside: avoid;
-    background-color: white;
-    border-radius: 25px;
+    border-radius: 42px;
+    background-color: black;
+    border: white;
+    border-width: 10px;
+    border-style: solid;
   }
 
   figure:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
+  }
+
+  #play-button{
+    background-color: white;
+    border: black;
+    border-style: solid;
+    border-width: 7px;
   }
   
   figure > img {
     grid-row: 1 / -1;
     grid-column: 1;
-  }
-  
-  figure a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  figcaption {
-    grid-row: 2;
-    grid-column: 1;
-    background-color: rgba(255,255,255,.5);
-    padding: .2em .5em;
-    justify-self: start;
   }
 
   .canvas{
@@ -200,6 +200,15 @@
     border-radius: 25px;
   }
 
+  #label{
+    margin: 50px;
+  }
+
+  .single_gallery img{
+    margin: auto;
+    display: block;
+  }
+
   .footer{
     padding-bottom: 20px;
     text-align: center;
@@ -213,11 +222,6 @@
     margin: auto;
   }
 
-  .image_container{
-    width:auto;
-    object-fit: contain;
-  }
-
   .text_container{
     padding: 10px;
   }
@@ -229,6 +233,7 @@
 
   #project{
     padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   button {
@@ -251,4 +256,29 @@
   address{
     padding: 10px;
     font-size: 20px;
+  }
+
+  .divider{
+    margin: auto;
+    max-width: 300px;
+    column-count: 2;
+  }
+
+  video{
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    border-radius: 25px;
+    margin: auto;
+    background-color: black;
+    padding: 10px;
+  }
+
+  iframe{
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    border-radius: 25px;
+    background-color: black;
+    padding: 10px;
   }
