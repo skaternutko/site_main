@@ -317,6 +317,12 @@
     width: 100%;
   }
 
+  .socials_gallery{
+    width: 85%;
+    column-count: 5;
+    margin: auto;
+  }
+
   figure {
     transition: transform .1s;
     padding: 10px;
