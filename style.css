@@ -101,7 +101,7 @@
     opacity: 100%;
   }
 
-  #about_me >img:  {
+  #about_me >img{
     opacity: 100%;
   }
 
@@ -127,7 +127,7 @@
   }
 
   .nav a > img:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 
   .nav a.active {
@@ -151,12 +151,8 @@
   figure {
     transition: transform .1s;
     padding: 10px;
-    display: grid;
-    grid-template-rows: 1fr auto;
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    break-inside: avoid;
+    margin-block: 30px;
     border-radius: 42px;
     background-color: black;
     border: white;
@@ -165,7 +161,7 @@
   }
 
   figure:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 
   #play-button{
@@ -200,7 +196,6 @@
 
   .double_gallery > img{
     margin: auto;
-    text-align: left;
   }
 
   .single_gallery{
@@ -241,8 +236,50 @@
   }
 
   #project{
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-block: 15px;
+  }
+
+  .gameVisuals{
+    justify-content: center;
+    align-content: space-evenly;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  #gamelogo{
+    height: 200px;
+  }
+
+  #gamelogo img{
+    object-fit: cover;
+    image-rendering: pixelated;
+  }
+
+  #gamescreenshot{
+    height: 300px;
+    image-rendering: pixelated;
+  }
+  
+  #gamescreenshot img{
+    object-fit: fill; 
+    transition: transform .1s;
+    padding: 10px;
+    border-radius: 42px;
+    background-color: black;
+    border: white;
+    border-width: 10px;
+    border-style: solid;  
+  }
+
+  #gametrailer{
+    height: 300px;
+  }
+  .gameInformation{
+    
+  }
+  #gamestats{
+  }
+  #gameexerpt{
+    padding-inline: 10px;
   }
 
   button {
@@ -281,7 +318,6 @@
     border-radius: 25px;
     background-color: black;
     padding: 10px;
-    margin: auto;
     width: 90%;
   }
 
