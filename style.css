@@ -85,23 +85,20 @@
 
   #about_me{
     text-align: center;
-    
+    justify-items: center;
+    display: grid;
   }
 
   #about_me > img{
-    position:absolute;
-    bottom: 50px;
-    left: 250px;
+    object-fit:fill;
+    position: absolute;
     opacity: 0%;
     scale: 200%;
+    top: 30%;
   }
 
   #about_me >img:hover{
     transition: opacity 10s;
-    opacity: 100%;
-  }
-
-  #about_me >img{
     opacity: 100%;
   }
 
@@ -169,6 +166,8 @@
     border: black;
     border-style: solid;
     border-width: 7px;
+    width: 250px;
+    margin-block: 15px;
   }
   
   figure > img {
@@ -221,8 +220,8 @@
   }
 
   .socials_gallery{
-    width: 500px;
-    column-count: 6;
+    width: 200px;
+    column-count: 3;
     margin: auto;
   }
 
@@ -250,7 +249,7 @@
   }
 
   #gamelogo img{
-    object-fit: cover;
+    object-fit:contain;
     image-rendering: pixelated;
   }
 
