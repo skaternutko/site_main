@@ -214,7 +214,7 @@
   }
 
   .footer{
-    padding-bottom: 20px;
+    padding-block: 10px;
     text-align: center;
     background-color: #46109e;
     color: white;
@@ -224,6 +224,7 @@
     width: 200px;
     column-count: 3;
     margin: auto;
+    padding-bottom: 10px;
   }
 
   .text_container{
@@ -301,9 +302,16 @@
   }
 
   address{
-    padding: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
   }
+
+  .emailForm{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically (if height is set) */
+  }
+
 
   .divider{
     margin: auto;
@@ -468,5 +476,11 @@
   }
   #construction{
     scale: 100%;
+  }
+
+  .emailForm{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically (if height is set) */
   }
 }
